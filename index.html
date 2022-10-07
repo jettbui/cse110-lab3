@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Meeting Minutes - Team Brainstorm</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Jett Bui">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+    </head>
+    <body>
+        <header>
+            <a id="top"></a>
+            <div>
+                <h1>Team Brainstorm</h1>
+                <h2>Topic: <span>Introductions, Brainstorming</span></h2>
+                <h3>Oct. 9, 2022</h3>
+            </div>
+        </header>
+        
+        <main>
+            <details>
+                <summary><b>Table of Contents</b></summary>
+                <ol>
+                    <li><a href="#meeting-information">Meeting Information</a></li>
+                    <li><a href="#agenda">Agenda</a>
+                    <ol>
+                        <li><a href="#agenda-company-introduction">Company Introduction</a></li>
+                        <li><a href="#agenda-team-name">Team Name</a></li>
+                        <li><a href="#agenda-contact-information">Contact Information</a></li>
+                    </ol>
+                    </li>
+                </ol>
+            </details>
+
+            <section>
+                <a id="#meeting-information"></a>
+                <h2>Meeting Information</h2>
+                <hr>
+                <ul>
+                    <li><b>Estimated Length:</b> 15 min.</li>
+                    <li><b>Attendees</b>
+                    <ul>
+                        <li>Jett Bui, Samir Rashid <strong>(team leads)</strong></li>
+                        <li>Jonathan Yin, Daniel Kan, Yuqin Zhang, Aung Kyaw, Yuxiao Qu, Nathan Ueda, Jeffrey Liu, Brian Aspinwall <strong>(team members)</strong></li>
+                    </ul>
+                    </li>
+                    <li><b>Absentees</b>
+                    <ul>
+                        <li><i>None</i></li>
+                    </ul>
+                    </li>
+                    <li><b>Facilitator:</b> Jett</li>
+                    <li><b>Note Taker:</b> Samir</li>
+                    <li><b>Timekeeper: </b> Jonathan</li>
+                </ul>
+            </section>
+
+            <a id="#agenda"></a>
+            <section>
+                <h2>Agenda</h2>
+                <hr>
+
+                <a id="#agenda-company-introduction"></a>
+                <h3>Company Introduction <em>(5 min.)</em></h3>
+                <p>Company Video</p>
+                <video width="640" height="360" controls>
+                    <source src="./assets/company-video.mp4" type="video/mp4">
+                </video>
+                <p>A Message from the CEO</p>
+                <audio controls>
+                    <source src="./assets/company-audio.mp3" type="audio/mp3">
+                </audio>
+    
+                <a id="#agenda-team-name"></a>
+                <h3>Team Name <em>(5 min.)</em></h3>
+                <p>Tentative Brand Logo Design:</p>
+                <img src="./assets/company-logo.png" alt="Company Logo image">
+                <p>Brainstorm potential team names:</p>
+                <ol>
+                    <li>Team 23</li>
+                    <li><i>...</i></li>
+                </ol>
+                
+                <a id="#agenda-contact-information"></a>
+                <h3>Contact Information <em>(5 min.)</em></h3>
+                <p>Please provide your own information for our team contact list.</p>
+                <form>
+                    <fieldset>
+                        <label for="name">Team Member Name</label><br>
+                        <input type="text" id="name" name="name" placeholder="John Doe"><br>
+    
+                        <label for="tel">Phone Number</label><br>
+                        <input type="text" id="tel" name="tel" placeholder="(123) 456-7890"><br>
+    
+                        <label for="email">Email Address</label><br>
+                        <input type="text" id="email" name="email" placeholder="john.doe@email.com"><br>
+    
+                        <label for="birthday">Birthday</label><br>
+                        <input type="date" id="birthday" name="birthday"><br>
+    
+                        <label for="preference">Prefered Communication</label><br>
+                        <select name="preference" id="preference">
+                            <option value="tel_pref">Telephone</option>
+                            <option value="email_pref">Email</option>
+                            <option value="none_pref">No preference</option>
+                        </select>
+                        <br>
+    
+                        <label>Preferred Role</label>
+                        <input type="radio" id="frontend" name="role" value="frontend">
+                        <label for="frontend">Frontend</label>
+                        <input type="radio" id="backend" name="role" value="backend">
+                        <label for="backend">Backend</label>
+                        <input type="radio" id="testing" name="role" value="testing">
+                        <label for="testing">Testing & QA</label>
+                        <input type="radio" id="none" name="role" value="none">
+                        <label for="none">No Preference</label>
+                        <br>
+    
+                        <label>Technical Skills</label>
+                        <input type="checkbox" id="HTML" name="skills" value="HTML">
+                        <label for="HTML">HTML</label>
+                        <input type="checkbox" id="CSS" name="skills" value="CSS">
+                        <label for="CSS">CSS</label>
+                        <input type="checkbox" id="javascript" name="skills" value="javascript">
+                        <label for="javascript">Javascript</label>
+                        <input type="checkbox" id="git" name="skills" value="git">
+                        <label for="git">Git</label>
+                        <br>
+    
+                        <label for="machine">Development Machine</label><br>
+                        <input list="machines" name="machine" id="machine">
+                        <datalist id="machines">
+                            <option value="Windows 10"></option>
+                            <option value="Windows 11"></option>
+                            <option value="MacOS Big Sur"></option>
+                            <option value="MacOS Monterey"></option>
+                            <option value="MacOS Ventura"></option>
+                        </datalist>
+                        <br>
+    
+                        <label for="comments">Additional Comments</label><br>
+                        <textarea id="comments" name="comments" rows="2" cols="50"></textarea><br>
+    
+                        <button type="button">Clear</button>
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
+            </section>
+
+        </main>
+
+        <footer>
+            <img src="./assets/ucsd-logo.jpg" alt="UCSD logo" width="150" height="56">
+            <nav>
+                <a href="#top">Back to top</a> |
+                <a href="https://ucsd.edu/" target="_blank">Company website</a>
+            </nav>
+        </footer>
+
+    </body>
+</html>
