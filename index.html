@@ -6,12 +6,22 @@
         <meta name="author" content="Jett Bui">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
 
         <style>
             body {
-                margin: 20px 50px;
-                font-family: Verdana, sans-serif
+                margin: 20px 50px 20px 50px;
+                font-family: 'Poppins', sans-serif;
+                background-color: #1f1e23;
+            }
+
+            @media only screen and (max-width: 720px) {
+                body {
+                    font-size: smaller;
+                }
             }
         </style>
     </head>
@@ -19,7 +29,7 @@
         <header>
             <a id="top" style="visibility:hidden;"></a>
             <div>
-                <h1>Team Brainstorm</h1>
+                <h1>Meeting Minutes</h1>
                 <h2>Topic: <span>Introductions, Brainstorming</span></h2>
                 <h3>Oct. 9, 2022</h3>
             </div>
@@ -64,102 +74,119 @@
             </section>
 
             <a id="agenda" style="visibility:hidden;"></a>
-            <section>
+            <section id="agenda">
                 <h2>Agenda</h2>
                 <hr>
 
-                <a id="agenda-company-introduction" style="visibility:hidden;"></a>
-                <h3>Company Introduction <em>(5 min.)</em></h3>
-                <p>Company Video</p>
-                <video width="640" height="360" controls>
-                    <source src="./assets/company-video.mp4" type="video/mp4">
-                </video>
-                <p>A Message from the CEO</p>
-                <audio controls>
-                    <source src="./assets/company-audio.mp3" type="audio/mp3">
-                </audio>
-    
-                <a id="agenda-team-name" style="visibility:hidden;"></a>
-                <h3>Team Name <em>(5 min.)</em></h3>
-                <p>Tentative Brand Logo Design:</p>
-                <img src="./assets/company-logo.png" alt="Company Logo image">
-                <p>Brainstorm potential team names:</p>
-                <ol>
-                    <li>Team 23</li>
-                    <li><i>...</i></li>
-                </ol>
-                
-                <a id="agenda-contact-information" style="visibility:hidden;"></a>
-                <h3>Contact Information <em>(5 min.)</em></h3>
-                <p>Please provide your own information for our team contact list.</p>
-                <form>
-                    <fieldset>
-                        <label for="name">Team Member Name</label><br>
-                        <input type="text" id="name" name="name" placeholder="John Doe"><br>
-    
-                        <label for="tel">Phone Number</label><br>
-                        <input type="text" id="tel" name="tel" placeholder="(123) 456-7890"><br>
-    
-                        <label for="email">Email Address</label><br>
-                        <input type="text" id="email" name="email" placeholder="john.doe@email.com"><br>
-    
-                        <label for="birthday">Birthday</label><br>
-                        <input type="date" id="birthday" name="birthday"><br>
-    
-                        <label for="preference">Prefered Communication</label><br>
-                        <select name="preference" id="preference">
-                            <option value="tel_pref">Telephone</option>
-                            <option value="email_pref">Email</option>
-                            <option value="none_pref">No preference</option>
-                        </select>
-                        <br>
-    
-                        <label>Preferred Role</label>
-                        <input type="radio" id="frontend" name="role" value="frontend">
-                        <label for="frontend">Frontend</label>
-                        <input type="radio" id="backend" name="role" value="backend">
-                        <label for="backend">Backend</label>
-                        <input type="radio" id="testing" name="role" value="testing">
-                        <label for="testing">Testing & QA</label>
-                        <input type="radio" id="none" name="role" value="none">
-                        <label for="none">No Preference</label>
-                        <br>
-    
-                        <label>Technical Skills</label>
-                        <input type="checkbox" id="HTML" name="skills" value="HTML">
-                        <label for="HTML">HTML</label>
-                        <input type="checkbox" id="CSS" name="skills" value="CSS">
-                        <label for="CSS">CSS</label>
-                        <input type="checkbox" id="javascript" name="skills" value="javascript">
-                        <label for="javascript">Javascript</label>
-                        <input type="checkbox" id="git" name="skills" value="git">
-                        <label for="git">Git</label>
-                        <br>
-    
-                        <label for="machine">Development Machine</label><br>
-                        <input list="machines" name="machine" id="machine">
-                        <datalist id="machines">
-                            <option value="Windows 10"></option>
-                            <option value="Windows 11"></option>
-                            <option value="MacOS Big Sur"></option>
-                            <option value="MacOS Monterey"></option>
-                            <option value="MacOS Ventura"></option>
-                        </datalist>
-                        <br>
-    
-                        <label for="comments">Additional Comments</label><br>
-                        <textarea id="comments" name="comments" rows="2" cols="50"></textarea><br>
-    
-                        <button type="button">Clear</button>
-                        <input type="submit" value="Submit">
-                    </fieldset>
-                </form>
+                <div class="agenda-section">
+                    <a id="agenda-company-introduction" style="visibility:hidden;"></a>
+                    <h3>Company Introduction <em>(5 min.)</em></h3>
+                    <div class="flex">
+                        <div class="flex-item">
+                            <h4>Mission Statement</h4>
+                            <p>"UC San Diego is transforming California and a diverse global
+                                 society by educating, by generating and disseminating knowledge
+                                  and creative works, and by engaging in public service."</p>
+                        </div>
+                        <div class="flex-item">
+                            <h4>Company Video</h4>
+                            <video width="640" height="360" controls>
+                                <source src="./assets/company-video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="flex-item">
+                            <h4>A Message from the CEO</h4>
+                            <audio controls>
+                                <source src="./assets/company-audio.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agenda-section">
+                    <a id="agenda-team-name" style="visibility:hidden;"></a>
+                    <h3>Team Name <em>(5 min.)</em></h3>
+                    <p>Tentative Brand Logo Design:</p>
+                    <img id="brand-image" src="./assets/company-logo.png" alt="Company Logo image">
+                    <p>Brainstorm potential team names:</p>
+                    <ol>
+                        <li>Team 23</li>
+                        <li><i>...</i></li>
+                    </ol>
+                </div>
+
+                <div class="agenda-section">
+                    <a id="agenda-contact-information" style="visibility:hidden;"></a>
+                    <h3>Contact Information <em>(5 min.)</em></h3>
+                    <p>Please provide your own information for our team contact list.</p>
+                    <form>
+                        <fieldset>
+                            <label for="name">Team Member Name</label><br>
+                            <input type="text" id="name" name="name" placeholder="John Doe"><br>
+        
+                            <label for="tel">Phone Number</label><br>
+                            <input type="text" id="tel" name="tel" placeholder="(123) 456-7890"><br>
+        
+                            <label for="email">Email Address</label><br>
+                            <input type="text" id="email" name="email" placeholder="john.doe@email.com"><br>
+        
+                            <label for="birthday">Birthday</label><br>
+                            <input type="date" id="birthday" name="birthday"><br>
+        
+                            <label for="preference">Prefered Communication</label><br>
+                            <select name="preference" id="preference">
+                                <option value="tel_pref">Telephone</option>
+                                <option value="email_pref">Email</option>
+                                <option value="none_pref">No preference</option>
+                            </select>
+                            <br>
+        
+                            <label>Preferred Role</label>
+                            <input type="radio" id="frontend" name="role" value="frontend">
+                            <label for="frontend">Frontend</label>
+                            <input type="radio" id="backend" name="role" value="backend">
+                            <label for="backend">Backend</label>
+                            <input type="radio" id="testing" name="role" value="testing">
+                            <label for="testing">Testing & QA</label>
+                            <input type="radio" id="none" name="role" value="none">
+                            <label for="none">No Preference</label>
+                            <br>
+        
+                            <label>Technical Skills</label>
+                            <input type="checkbox" id="HTML" name="skills" value="HTML">
+                            <label for="HTML">HTML</label>
+                            <input type="checkbox" id="CSS" name="skills" value="CSS">
+                            <label for="CSS">CSS</label>
+                            <input type="checkbox" id="javascript" name="skills" value="javascript">
+                            <label for="javascript">Javascript</label>
+                            <input type="checkbox" id="git" name="skills" value="git">
+                            <label for="git">Git</label>
+                            <br>
+        
+                            <label for="machine">Development Machine</label><br>
+                            <input list="machines" name="machine" id="machine">
+                            <datalist id="machines">
+                                <option value="Windows 10"></option>
+                                <option value="Windows 11"></option>
+                                <option value="MacOS Big Sur"></option>
+                                <option value="MacOS Monterey"></option>
+                                <option value="MacOS Ventura"></option>
+                            </datalist>
+                            <br>
+        
+                            <label for="comments">Additional Comments</label><br>
+                            <textarea id="comments" name="comments" rows="2" cols="50"></textarea><br>
+        
+                            <button type="button">Clear</button>
+                            <input type="submit" value="Submit">
+                        </fieldset>
+                    </form>
+                </div>
             </section>
 
         </main>
 
         <footer>
-            <img src="./assets/ucsd-logo.jpg" alt="UCSD logo" width="150" height="56">
             <nav>
                 <a href="#top">Back to top</a> |
                 <a href="https://ucsd.edu/" target="_blank">Company website</a>

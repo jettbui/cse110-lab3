@@ -1,1 +1,93 @@
-/* css goes here */
+/* general styling */
+* {
+    color: lightgrey;
+}
+
+a:hover {
+    color: hsl(140, 61%, 72%);
+}
+
+header, section, details, footer {
+    margin: auto;
+    padding: 0.9rem 2rem 0.9rem 2rem
+}
+
+details {
+    min-height: 12rem;
+    max-height: 13rem;
+}
+
+details summary ~ ol {
+    border-left: 1px solid white;
+}
+
+/* header styling */
+header h1, header h2, header h3 {
+    color: #5ee88c;
+}
+
+header h2 > span {
+    color: 	rgb(64, 202, 110);
+    text-shadow: -3px 1.5px rgba(53, 98, 70, 0.843);
+    position: relative;
+    bottom: 1.5px;
+    left: 2px;
+}
+
+/* footer styling */
+footer {
+    background-color: #18181a;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    margin: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+footer > nav > a ~ p {
+    color: green;
+}
+
+/* agenda styling */
+#agenda > .agenda-section {
+    margin-bottom: 1cm;
+}
+
+#agenda > .agenda-section h3 {
+    color: 	rgb(170, 240, 193);
+}
+
+#agenda > .agenda-section h3 > em {
+    font-size: 0.7em;
+}
+
+[width="640"] {
+    max-width: 720px;
+}
+
+img#brand-image {
+    padding: 24px;
+    background-color: white;
+    border-style: solid;
+    border-color: rgb(170, 240, 193);
+    border-width: 2px;
+    border-radius: 2mm;
+    width: 290px;
+    height: 72px;
+}
+
+h4 + p {
+    font-style: italic;
+    display: block;
+}
+
+.flex {
+    display: flex;
+    column-gap: 2vw;
+}
+.flex-item {
+    flex-direction: row;
+    flex-grow: 1;
+    flex-basis: 0;
+    display: inline-block;
+}
