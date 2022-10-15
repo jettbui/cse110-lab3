@@ -91,3 +91,55 @@ h4 + p {
     flex-basis: 0;
     display: inline-block;
 }
+
+/* form styling */
+
+form input, form select {
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.form-btns {
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: auto auto auto;
+    max-width: 80%;
+}
+
+.white-btn {
+    width: 70px;
+    height: 40px;
+    font-size: 16px;
+    color: black;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 2px;
+}
+
+.white-btn:hover {
+    opacity: 90%;
+}
+
+.white-btn:active {
+    opacity: 70%;
+}
+
+.submit-btn {
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    background-color: lightgreen;
+    border: 1px solid lightgreen;
+    border-radius: 2px;
+}
+
+.submit-btn:hover {
+    opacity: 90%;
+}
+
+.submit-btn:active {
+    opacity: 70%;
+}
