@@ -118,6 +118,14 @@ form input, form select {
     border-radius: 2px;
 }
 
+.white-btn:hover {
+    opacity: 90%;
+}
+
+.white-btn:active {
+    opacity: 70%;
+}
+
 .submit-btn {
     width: 140px;
     height: 40px;
@@ -126,4 +134,12 @@ form input, form select {
     background-color: lightgreen;
     border: 1px solid lightgreen;
     border-radius: 2px;
+}
+
+.submit-btn:hover {
+    opacity: 90%;
+}
+
+.submit-btn:active {
+    opacity: 70%;
 }
